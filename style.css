@@ -1,59 +1,42 @@
-:root {
-    --bg-color: #050a20; /* Dark blue-black for that professional vibe */
-    --neon-orange: #ff5e00;
-    --text-color: #ffffff;
-}
-
+/* Basic Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { 
-    font-family: 'Segoe UI', sans-serif; 
-    background-color: var(--bg-color); 
-    color: var(--text-color); 
-    scroll-behavior: smooth; 
+    background-color: #050a20; 
+    color: #ffffff; 
+    font-family: sans-serif; 
 }
 
 /* Nav */
 nav { 
     display: flex; justify-content: space-between; align-items: center; 
     padding: 20px 50px; position: fixed; width: 100%; top: 0; 
-    background: rgba(5, 10, 32, 0.9); z-index: 1000;
+    background: rgba(5, 10, 32, 0.95); z-index: 1000;
 }
 
 .logo { 
-    font-size: 1.8rem; font-weight: 800; color: var(--neon-orange); 
-    text-decoration: none; text-shadow: 0 0 10px var(--neon-orange); 
+    font-size: 1.8rem; font-weight: 800; color: #ff5e00; 
+    text-decoration: none; text-shadow: 0 0 10px #ff5e00; 
 }
-
-nav ul { display: flex; list-style: none; gap: 30px; }
-nav a { color: var(--text-color); text-decoration: none; transition: 0.3s; }
-nav a:hover { color: var(--neon-orange); }
 
 /* Hero Section */
-/* Update the hero section in style.css */
 .hero {
     display: flex;
-    justify-content: center; /* Horizontally centers the image */
-    align-items: center;     /* Vertically centers the image */
-    height: 100vh;           /* Takes up full screen height */
-    padding-top: 80px;       /* Adds space for the fixed nav */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Ensure the image container isn't forcing alignment issues */
-.hero-center { 
-    display: flex; 
-    justify-content: center; 
-    flex: 0 0 auto; /* Keeps the image at its natural size */
-}
-
+/* The Image: This forces it big and removes the orange box */
 .profile-img {
-    width: 500px;            /* Large size */
-    height: 500px;           /* Large size */
-    object-fit: cover;       /* Keeps the image from stretching */
-    border-radius: 50%;      /* Makes it a circle */
-    border: none;            /* Removes the orange border */
-    box-shadow: none;        /* Removes the orange glow */
+    width: 500px;           /* Adjust this to make it bigger/smaller */
+    height: 500px;          /* Keep it square */
+    object-fit: cover;      /* Keeps image from distorting */
+    border-radius: 50%;     /* Keeps it circular */
+    
+    /* REMOVING THE ORANGE BOX/BORDER */
+    border: none !important; 
+    outline: none !important;
+    box-shadow: none !important;
+    background: none !important;
 }
-
-h1 { font-size: 3rem; color: var(--neon-orange); }
-h3 { color: var(--neon-orange); margin-bottom: 10px; }
