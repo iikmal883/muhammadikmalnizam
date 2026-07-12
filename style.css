@@ -48,12 +48,12 @@ nav a:hover { color: var(--neon-orange); }
 }
 
 .profile-img { 
-    width: 300px; 
-    height: 300px; /* Optional: forces a square aspect ratio */
-    object-fit: cover; /* Ensures the image doesn't look stretched */
-    border-radius: 50%; /* Optional: Makes your image a circle */
+    width: 300px;           /* Controls the size */
+    height: 300px;          /* Forces a square aspect ratio */
+    object-fit: cover;      /* Prevents stretching */
+    border-radius: 50%;     /* Makes it a circle */
     border: 3px solid var(--neon-orange);
-    box-shadow: 0 0 15px var(--neon-orange); /* Adds the neon glow to your image */
+    box-shadow: 0 0 15px var(--neon-orange); /* Adds the neon glow */
 }
 
 h1 { font-size: 3rem; color: var(--neon-orange); }
