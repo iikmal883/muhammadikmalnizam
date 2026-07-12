@@ -31,13 +31,12 @@ nav a:hover { color: var(--neon-orange); }
 
 /* Hero Section */
 /* Update the hero section in style.css */
-.hero { 
-    display: flex; 
-    align-items: center;      /* Vertically centers everything */
-    justify-content: center;  /* This pushes everything to the center */
-    gap: 50px;                /* Adds space between your items */
-    height: 100vh; 
-    padding: 0 50px; 
+.hero {
+    display: flex;
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center;     /* Vertically centers the image */
+    height: 100vh;           /* Takes up full screen height */
+    padding-top: 80px;       /* Adds space for the fixed nav */
 }
 
 /* Ensure the image container isn't forcing alignment issues */
@@ -47,13 +46,13 @@ nav a:hover { color: var(--neon-orange); }
     flex: 0 0 auto; /* Keeps the image at its natural size */
 }
 
-.profile-img { 
-    width: 300px;           /* Controls the size */
-    height: 300px;          /* Forces a square aspect ratio */
-    object-fit: cover;      /* Prevents stretching */
-    border-radius: 50%;     /* Makes it a circle */
-    border: 3px solid var(--neon-orange);
-    box-shadow: 0 0 15px var(--neon-orange); /* Adds the neon glow */
+.profile-img {
+    width: 500px;            /* Large size */
+    height: 500px;           /* Large size */
+    object-fit: cover;       /* Keeps the image from stretching */
+    border-radius: 50%;      /* Makes it a circle */
+    border: none;            /* Removes the orange border */
+    box-shadow: none;        /* Removes the orange glow */
 }
 
 h1 { font-size: 3rem; color: var(--neon-orange); }
