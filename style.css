@@ -30,19 +30,30 @@ nav a { color: var(--text-color); text-decoration: none; transition: 0.3s; }
 nav a:hover { color: var(--neon-orange); }
 
 /* Hero Section */
+/* Update the hero section in style.css */
 .hero { 
-    display: flex; align-items: center; justify-content: space-around; 
-    height: 100vh; padding: 0 50px; 
+    display: flex; 
+    align-items: center;      /* Vertically centers everything */
+    justify-content: center;  /* This pushes everything to the center */
+    gap: 50px;                /* Adds space between your items */
+    height: 100vh; 
+    padding: 0 50px; 
 }
 
-.hero-left, .hero-right { flex: 1; max-width: 300px; }
-.hero-center { flex: 1; text-align: center; }
+/* Ensure the image container isn't forcing alignment issues */
+.hero-center { 
+    display: flex; 
+    justify-content: center; 
+    flex: 0 0 auto; /* Keeps the image at its natural size */
+}
 
-.profile-img { width: 300px; border-radius: 20px; border: 3px solid var(--neon-orange); }
-
-.btn { 
-    display: inline-block; padding: 10px 20px; border: 2px solid var(--neon-orange); 
-    color: var(--neon-orange); text-decoration: none; border-radius: 5px; margin-top: 20px; 
+.profile-img { 
+    width: 300px; 
+    height: 300px; /* Optional: forces a square aspect ratio */
+    object-fit: cover; /* Ensures the image doesn't look stretched */
+    border-radius: 50%; /* Optional: Makes your image a circle */
+    border: 3px solid var(--neon-orange);
+    box-shadow: 0 0 15px var(--neon-orange); /* Adds the neon glow to your image */
 }
 
 h1 { font-size: 3rem; color: var(--neon-orange); }
