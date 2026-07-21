@@ -3,29 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IKMAL Portfolio</title>
+    <title>Your Name | Electronic Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for clean technical typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav>
-        <a href="#home" class="logo">IKMAL</a>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-center">
-            <img src="smart.png" alt="My Profile Picture" class="profile-img">
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">EE<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="active">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">⚡</button>
         </div>
-    </section>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <span class="badge">Electronic Engineering Portfolio</span>
+                    <h1>Designing the future of <span class="highlight">hardware & embedded systems</span>.</h1>
+                    <p class="lead">
+                        Hi, I'm [Your Name], an Electronic Engineer passionate about bringing circuit designs, firmware architecture, and hardware systems to life. 
+                    </p>
+                    <p>
+                        With a strong foundation in PCB layout, microcontroller programming, and circuit analysis, I bridge the gap between abstract concepts and robust, physical systems. Whether it's optimizing power management or developing IoT edge devices, I love solving complex engineering challenges.
+                    </p>
+                    <div class="about-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="card-title">system_status.log</span>
+                    </div>
+                    <div class="card-body">
+                        <p><code>> STATUS: Online & Ready</code></p>
+                        <p><code>> FOCUS: Embedded Systems, PCB Design, VLSI</code></p>
+                        <p><code>> TOOLS: Altium, KiCad, C/C++, Python</code></p>
+                        <p class="blink"><code>> _</code></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 [Your Name]. Built with clean code & circuitry passion.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
