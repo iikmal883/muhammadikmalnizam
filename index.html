@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronic Engineering Portfolio</title>
+    <title>Muhammad Ikmal Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,10 +46,10 @@
                 IKMAL<span class="text-orange">.</span>
             </a>
             <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-                <a href="#about" class="transform transition-transform duration-300 hover:scale-105 hover:text-orange text-orange font-semibold">About</a>
-                <a href="#projects" class="transform transition-transform duration-300 hover:scale-105 hover:text-orange">Projects</a>
-                <a href="#skills" class="transform transition-transform duration-300 hover:scale-105 hover:text-orange">Skills</a>
-                <a href="#contact" class="transform transition-transform duration-300 hover:scale-105 hover:text-orange">Contact</a>
+                <a href="#about" class="hover:text-orange transition-all duration-300 transform hover:scale-110 text-orange font-semibold">About</a>
+                <a href="#projects" class="hover:text-orange transition-all duration-300 transform hover:scale-110">Projects</a>
+                <a href="#skills" class="hover:text-orange transition-all duration-300 transform hover:scale-110">Skills</a>
+                <a href="#contact" class="hover:text-orange transition-all duration-300 transform hover:scale-110">Contact</a>
             </nav>
             <div class="flex items-center gap-3">
                 <button id="themeToggle" class="w-10 h-10 rounded-full bg-orange-light text-orange flex items-center justify-center hover:bg-orange hover:text-white transition-all shadow-sm" aria-label="Toggle Mode">
@@ -68,7 +68,7 @@
                         Electronic Engineering Portfolio
                     </div>
                     <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 leading-[1.15]">
-                        Designing the future of <span class="text-orange underline decoration-orange-light decoration-4 underline-offset-8">hardware & embedded systems</span>.
+                        Muhammad Ikmal<span class="text-orange">.</span>
                     </h1>
                     <p class="text-lg text-gray-600 font-medium">
                         Hi, I'm an Electronic Engineer passionate about bringing circuit designs, firmware architecture, and robust hardware systems to life.
@@ -113,94 +113,6 @@
                     </div>
                 </div>
 
-            </div>
-        </section>
-
-        <!-- Featured Projects Gallery (Spencer Gabor inspired clean grid layout) -->
-        <section id="projects" class="py-24 bg-white border-t border-gray-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                    <div>
-                        <span class="text-orange font-mono font-bold text-xs uppercase tracking-widest block mb-2">Featured Work</span>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Recent hardware & firmware projects</h2>
-                    </div>
-                    <p class="text-gray-500 mt-4 md:mt-0 text-sm max-w-sm">
-                        A curation of custom PCB designs, IoT microcontrollers, and embedded signal processors.
-                    </p>
-                </div>
-
-                <!-- Projects Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    
-                    <!-- Project 1 -->
-                    <div class="group cursor-pointer">
-                        <div class="bg-gray-100 rounded-2xl overflow-hidden aspect-[4/3] relative mb-4 border border-gray-200/60 transition-transform duration-500 group-hover:scale-[1.02]">
-                            <img src="https://placehold.co/800x600/FFEDE0/FF6B00?text=IoT+Edge+Controller" alt="IoT Edge Controller" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <span class="bg-white/90 backdrop-blur-sm text-gray-900 font-semibold px-4 py-2 rounded-lg text-xs">View Blueprint & Specs</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange transition-colors">Ultra-Low Power IoT Gateway</h3>
-                                <p class="text-sm text-gray-500 mt-1">STM32 Microcontroller, LoRaWAN, Custom Altium Layout</p>
-                            </div>
-                            <span class="text-xs font-mono font-bold bg-orange-light text-orange px-2.5 py-1 rounded-md">2026</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="group cursor-pointer">
-                        <div class="bg-gray-100 rounded-2xl overflow-hidden aspect-[4/3] relative mb-4 border border-gray-200/60 transition-transform duration-500 group-hover:scale-[1.02]">
-                            <img src="https://placehold.co/800x600/FFEDE0/FF6B00?text=Power+Management+Unit" alt="Power Management Unit" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <span class="bg-white/90 backdrop-blur-sm text-gray-900 font-semibold px-4 py-2 rounded-lg text-xs">View Schematic</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange transition-colors">Multi-Rail PMIC Board</h3>
-                                <p class="text-sm text-gray-500 mt-1">High-Efficiency DC-DC Converters, Thermal Optimization</p>
-                            </div>
-                            <span class="text-xs font-mono font-bold bg-orange-light text-orange px-2.5 py-1 rounded-md">2025</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="group cursor-pointer">
-                        <div class="bg-gray-100 rounded-2xl overflow-hidden aspect-[4/3] relative mb-4 border border-gray-200/60 transition-transform duration-500 group-hover:scale-[1.02]">
-                            <img src="https://placehold.co/800x600/FFEDE0/FF6B00?text=FPGA+Signal+Processor" alt="FPGA Signal Processor" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <span class="bg-white/90 backdrop-blur-sm text-gray-900 font-semibold px-4 py-2 rounded-lg text-xs">View HDL Code</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange transition-colors">Real-Time FPGA DSP Pipeline</h3>
-                                <p class="text-sm text-gray-500 mt-1">Xilinx Artix-7, Verilog, High-Speed ADC Integration</p>
-                            </div>
-                            <span class="text-xs font-mono font-bold bg-orange-light text-orange px-2.5 py-1 rounded-md">2025</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="group cursor-pointer">
-                        <div class="bg-gray-100 rounded-2xl overflow-hidden aspect-[4/3] relative mb-4 border border-gray-200/60 transition-transform duration-500 group-hover:scale-[1.02]">
-                            <img src="https://placehold.co/800x600/FFEDE0/FF6B00?text=Robotics+Motor+Driver" alt="Robotics Motor Driver" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <span class="bg-white/90 backdrop-blur-sm text-gray-900 font-semibold px-4 py-2 rounded-lg text-xs">View Bench Test</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 group-hover:text-orange transition-colors">High-Current Brushless Motor Driver</h3>
-                                <p class="text-sm text-gray-500 mt-1">MOSFET Gate Drivers, Closed-Loop FOC Firmware</p>
-                            </div>
-                            <span class="text-xs font-mono font-bold bg-orange-light text-orange px-2.5 py-1 rounded-md">2024</span>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </section>
     </main>
